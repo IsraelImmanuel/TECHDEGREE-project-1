@@ -1,13 +1,13 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gotham Medium typeface'
   color: #222;
   background: #f7f5f0;
 }
@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/newbackground.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -66,15 +66,15 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 60px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 20%;
+  border: 3px solid yellow;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -83,7 +83,12 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+  transition: all .5s;
+}
+header .tag:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
 .location {
   background-color: #222;
   color: yellow;
@@ -144,7 +149,8 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
+  margin-left: 1px;
+  margin-right: 10px;
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
@@ -169,10 +175,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -203,5 +209,18 @@ a.social:hover {
     margin: 40px auto;
   }
 
-}
+    .main-image {
+      border: solid 4px black;
+      border-radius: 10%;
+      margin-top: 40px;
+    }
+  h1 {
+    background-color: #e2e2e2;
+    padding: 5px;
+  }
 
+  .section-title {
+    text-transform: uppercase;
+
+  }
+}
