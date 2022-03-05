@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Gotham Medium typeface'
+  font-family: 'Fredoka', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/newbackground.jpg') no-repeat top center ;
+  background: url('images/new_background.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -212,7 +212,7 @@ a.social:hover {
     .main-image {
       border: solid 4px black;
       border-radius: 10%;
-      margin-top: 40px;
+      margin-top: 80px;
     }
   h1 {
     background-color: #e2e2e2;
@@ -223,4 +223,5 @@ a.social:hover {
     text-transform: uppercase;
 
   }
+  
 }
